@@ -1,15 +1,51 @@
-body {
+body{
     background: #feab19;
     padding: 2%;
-}
-
-.main {
+    animation: changeBg 5s infinite alternate linear;
+   }
+   @keyframes changeBg{
+  
+    0% {
+  
+      background: yellow;
+  
+    }
+  
+    25% {
+  
+      background: orange;
+  
+    }
+  
+    50% {
+  
+      background: orange;
+  
+    }
+  
+    75% {
+  
+      background: orange;
+  
+    }
+  
+    100% {
+  
+      background:orange;
+  
+    }
+  
+  }
+  
+  
+  
+.main{
     border-radius: 25px;
     border: 8px solid #ffc661;
 }
 
 .Main-Menu {
-    height: 90vh;
+    height: 89vh;
     background: rgb(255, 255, 255);
     border-top-left-radius: 18px;
     border-bottom-left-radius: 18px;
@@ -17,7 +53,7 @@ body {
 }
 
 .Main-Menu h6 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 700;
 }
 
@@ -54,7 +90,8 @@ ul {
     background: #f5f5f9;
     border-top-right-radius: 18px;
     border-bottom-right-radius: 18px;
-    height: 90vh;
+    height: 89vh;
+    /* width: 100%; */
 }
 
 .Main-Content .content {
@@ -93,7 +130,7 @@ ul {
 }
 
 /* media queries */
-@media (max-width:1115px) {
+ /* @media (max-width:1115px) {
     #main-nav {
         display: none;
         width: 100%;
@@ -113,4 +150,4 @@ ul {
     .Main-Content {
         width: 300%;
     }
-}
+}  */

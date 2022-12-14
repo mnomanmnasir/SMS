@@ -1,7 +1,7 @@
-console.log($);
+// console.log($);
 
 $(document).ready(function () {
-    console.log("document is ready");
+//     console.log("document is ready");
 
 
     // $('p').click(function(){
@@ -20,9 +20,9 @@ $(document).ready(function () {
     //     opacity:1
     // }, 1000)
 
-    $('p:first').click(function (e) {
-        $('p:first').html("htmlString");
-    });
+    // $('p:first').click(function (e) {
+    //     $('p:first').html("htmlString");
+    // });
 
     // $('p').hover(function () {
     //         // over
@@ -76,10 +76,11 @@ $(document).ready(function () {
         $("#hamburgar-main").click(function(){
             count++;
             $("#main-nav"). toggle(500);
-            if(count === 1){
+            if(count === 0){
                 $(".Main-Content").removeClass("col-lg-10").addClass("col-lg-12");
+                // $(".Main-Content").css({"width":"75vh"});
                 
-            }else if(count === 2){
+            }else if(count === 1){
                 $(".Main-Content").removeClass("col-lg-12").addClass("col-lg-10");
                 count=0;
             }
